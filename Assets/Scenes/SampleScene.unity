@@ -809,6 +809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268d11e580ca00d4fa2d5f51c6ec1148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlSpeed: 30
+  xClampRange: 35
+  yClampRange: 22
 --- !u!1 &1034299995
 GameObject:
   m_ObjectHideFlags: 0
