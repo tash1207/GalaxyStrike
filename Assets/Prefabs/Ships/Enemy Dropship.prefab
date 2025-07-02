@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5344813412545832883, guid: 500d6fa5d94cec54382db2420e8b54e9, type: 3}
       propertyPath: m_Name
-      value: Enemy4
+      value: Enemy Dropship
       objectReference: {fileID: 0}
     - target: {fileID: 6393228026556927682, guid: 500d6fa5d94cec54382db2420e8b54e9, type: 3}
       propertyPath: m_LocalScale.x
@@ -83,6 +83,10 @@ PrefabInstance:
     - target: {fileID: 6393228026556927682, guid: 500d6fa5d94cec54382db2420e8b54e9, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7782691227932015887, guid: 500d6fa5d94cec54382db2420e8b54e9, type: 3}
+      propertyPath: hitPoints
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
