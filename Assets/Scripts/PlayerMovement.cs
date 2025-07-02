@@ -3,9 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float controlSpeed = 30f;
-    [SerializeField] float xClampRange = 35f;
-    [SerializeField] float yClampRange = 22f;
+    [SerializeField] float controlSpeed = 25f;
+    [SerializeField] float xClampRange = 25f;
+    [SerializeField] float yClampRange = 18f;
+    [SerializeField] float yClampOffset = 8f;
 
     [SerializeField] float controlPitchFactor = 18f;
     [SerializeField] float controlRollFactor = 20f;
@@ -32,7 +33,8 @@ public class PlayerMovement : MonoBehaviour
 
         float yOffset = movement.y * controlSpeed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffset;
-        float clampedYPos = Mathf.Clamp(rawYPos, -yClampRange, yClampRange);
+        float clampedYPos =
+            Mathf.Clamp(rawYPos, -yClampRange + yClampOffset, yClampRange + yClampOffset);
 
         transform.localPosition = new Vector3(
             clampedXPos,
